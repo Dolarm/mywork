@@ -12,7 +12,7 @@ scrape_configs:
       module: [http_2xx]
     static_configs:
       - targets:
-        - https://127.0.0.1:80
+        - 192.168.1.8:80
     relabel_configs:
       - source_labels: [__address__]
         target_label: __param_target
